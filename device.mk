@@ -91,6 +91,7 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     libvolumelistener \
+    sound_trigger.primary.taro \
     libhfp_pal
 
 PRODUCT_COPY_FILES += \
