@@ -108,7 +108,7 @@ DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
 # Kernel
 # is-board-platform-in-list is used in split files below
 # from https://git.codelinaro.org/clo/la/platform/vendor/qcom-opensource/core-utils/-/blob/LA.QSSI.12.0.r1-08700.03-qssi.0/build/utils.mk
-include $(DEVICE_PATH)/build/utils.mk
+include $(DEVICE_PATH)/kernel/build/utils.mk
 
 include $(DEVICE_PATH)/kernel/kernel-platform-board.mk
 
@@ -184,11 +184,11 @@ TARGET_USERIMAGES_SPARSE_F2FS_DISABLED := true
 TARGET_POWERHAL_MODE_EXT := $(DEVICE_PATH)/power/power-mode.cpp
 
 # Properties
-TARGET_ODM_PROP += $(DEVICE_PATH)/properties/odm.prop
-TARGET_PRODUCT_PROP += $(DEVICE_PATH)/properties/product.prop
-TARGET_SYSTEM_PROP += $(DEVICE_PATH)/properties/system.prop
-TARGET_SYSTEM_EXT_PROP += $(DEVICE_PATH)/properties/system_ext.prop
-TARGET_VENDOR_PROP += $(DEVICE_PATH)/properties/vendor.prop
+TARGET_ODM_PROP += $(DEVICE_PATH)/props/odm.prop
+TARGET_PRODUCT_PROP += $(DEVICE_PATH)/props/product.prop
+TARGET_SYSTEM_PROP += $(DEVICE_PATH)/props/system.prop
+TARGET_SYSTEM_EXT_PROP += $(DEVICE_PATH)/props/system_ext.prop
+TARGET_VENDOR_PROP += $(DEVICE_PATH)/props/vendor.prop
 
 # Recovery
 #namespace definition for librecovery_updater

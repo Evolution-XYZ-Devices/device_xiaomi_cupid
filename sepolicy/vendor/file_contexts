@@ -58,6 +58,10 @@
 /mnt/vendor/persist/goodix(/.*)? u:object_r:vendor_fingerprint_data_file:s0
 /(vendor|system/vendor)/bin/hw/android\.hardware\.biometrics\.fingerprint@2\.3-service\.xiaomi u:object_r:hal_fingerprint_default_exec:s0
 
+# Udfps
+/sys/devices/platform/soc/990000\.spi/spi_master/spi0/spi0\.0/fod_pressed u:object_r:sysfs_tp_fodstatus:s0
+/sys/devices/platform/soc/990000\.spi/spi_master/spi0/spi0\.0/fod_status u:object_r:sysfs_tp_fodstatus:s0
+
 # GNSS
 /data/vendor/ins(/.*)?                                                    u:object_r:vendor_ins_vendor_data_file:s0
 /data/vendor/qxwz(/.*)?                                                   u:object_r:qx_oss_vendor_data_file:s0

@@ -14,13 +14,13 @@ allow bluetooth vendor_bt_data_file:file { getattr open read };
 allow bluetooth system_app_data_file:dir getattr;
 allow bluetooth system_app_data_file:file { getattr open read };
 allow bluetooth self:socket { create getopt read write };
-#allow bluetooth self:socket ioctl;
+
 allow bluetooth servicemanager:fd *;
 allow bluetooth system_app:binder { call transfer };
 allow bluetooth system_app:fd *;
 allow bluetooth vendor_dun_service:service_manager find;
 allow bluetooth hal_audio_hwservice:hwservice_manager find;
-#allowxperm bluetooth self:ioctl socket ((range 0xc300 0xc305));
+
 dontaudit bluetooth netd_service:service_manager find;
 get_prop(bluetooth, vendor_display_prop)
 get_prop(bluetooth, vendor_audio_prop)
