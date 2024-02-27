@@ -283,9 +283,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libjson
 
-# Kernel
-$(call inherit-product, $(LOCAL_PATH)/kernel/kernel-platform-product.mk)
-
 # Keymaster
 PRODUCT_PACKAGES += \
     android.hardware.keymaster@4.1.vendor \
