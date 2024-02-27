@@ -90,6 +90,9 @@ PRODUCT_PACKAGES += \
     audio.usb.default
 
 PRODUCT_PACKAGES += \
+    libqcompostprocbundle \
+    libqcomvisualizer \
+    libqcomvoiceprocessing \
     libvolumelistener \
     sound_trigger.primary.taro \
     libhfp_pal
