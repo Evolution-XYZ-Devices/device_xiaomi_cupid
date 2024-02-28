@@ -1,4 +1,4 @@
-# All unpinned blobs below are extracted from cupid V14.0.7.0.TLCMIXM
+# All unpinned blobs below are extracted from cupid V14.0.8.0.TLCMIXM
 
 # ACDB
 vendor/etc/acdbdata/Forte_elus/Forte_elus_acdb_cal.acdb
@@ -156,30 +156,6 @@ vendor/firmware/T-handset.txt
 vendor/firmware/T-music.txt
 vendor/firmware/cs35l41-dsp1-spk-cali.wmfw
 vendor/firmware/cs35l41-dsp1-spk-prot.wmfw
-
-# Audio graph manager
--vendor/lib/libagm.so
--vendor/lib/vendor.qti.hardware.AGMIPC@1.0-impl.so
--vendor/lib64/libagm.so
--vendor/lib64/vendor.qti.hardware.AGMIPC@1.0-impl.so
-vendor/bin/agmcap
-vendor/bin/agmcompressplay
-vendor/bin/agmplay
-vendor/bin/cplay
-vendor/bin/hw/vendor.qti.hardware.AGMIPC@1.0-service
-vendor/etc/init/vendor.qti.hardware.AGMIPC@1.0-service.rc
-vendor/lib/libagm_compress_plugin.so
-vendor/lib/libagm_mixer_plugin.so
-vendor/lib/libagm_pcm_plugin.so
-vendor/lib/libagmclient.so
-vendor/lib/libagmmixer.so
-vendor/lib/vendor.qti.hardware.AGMIPC@1.0.so
-vendor/lib64/libagm_compress_plugin.so
-vendor/lib64/libagm_mixer_plugin.so
-vendor/lib64/libagm_pcm_plugin.so
-vendor/lib64/libagmclient.so
-vendor/lib64/libagmmixer.so
-vendor/lib64/vendor.qti.hardware.AGMIPC@1.0.so
 
 # Audio graph manager
 -vendor/lib/libagm.so
@@ -407,6 +383,7 @@ vendor/lib64/camera/com.qti.tuned.cupid_semco_imx707_wide.bin
 vendor/lib64/camera/com.qti.tuned.cupid_semco_imx766_wide.bin
 vendor/lib64/camera/com.qti.tuned.cupid_sunny_ov13b10_ultra.bin
 vendor/lib64/camera/com.qti.tuned.cupid_sunny_s5k5e9_macro.bin
+vendor/lib64/hw/com.qti.chi.override.so
 
 # Camera
 vendor/bin/hw/vendor.qti.camera.provider@2.7-service_64
@@ -1026,6 +1003,7 @@ vendor/lib64/libdeflicker.so
 vendor/lib64/libdualcam_optical_zoom_control.so
 vendor/lib64/libdualcam_video_optical_zoom.so
 vendor/lib64/libellv.so
+vendor/lib64/libhdr10plus.so
 vendor/lib64/libhexagon_controller.so
 vendor/lib64/libhis_11_yaml_build.so
 vendor/lib64/libipebpsstriping.so
@@ -1119,15 +1097,6 @@ vendor/lib64/vendor.xiaomi.hardware.bgservice@1.0.so
 vendor/lib64/vendor.xiaomi.hardware.campostproc@1.0-service-impl.so
 vendor/lib64/vendor.xiaomi.hardware.campostproc@1.0.so
 vendor/lib64/vendor.xiaomi.hardware.quickcamera@1.0.so
-
-# MIUI camera from from cupid V14.0.2.0.TLCMIXM
-product/priv-app/MiuiCamera/MiuiCamera.apk:system/priv-app/MiuiCamera/MiuiCamera.apk|981cfe8fb78426ab4cd9045961c187d4ae7ef291
-
-system/etc/public.libraries-xiaomi.txt
-system/lib64/libcamera_algoup_jni.xiaomi.so
-system/lib64/libcamera_mianode_jni.xiaomi.so
-system/lib64/libmicampostproc_client.so
-system/lib64/vendor.xiaomi.hardware.campostproc@1.0.so
 
 # CDSP
 vendor/bin/cdsprpcd
@@ -1377,17 +1346,17 @@ vendor/etc/display/qdcm_calib_data_xiaomi_42_02_0a_mp_cmd_mode_dsc_dsi_panel.jso
 vendor/etc/mdss_dsi_l3_42_02_0a_dsc_cmd_mi.xml
 
 # Display HDR
+vendor/lib/libhdr_backlight_adapter.so
+vendor/lib/libhdr_hbm.so
+vendor/lib/libhdr_tm.so
 vendor/lib/libhdrdynamic.so
 vendor/lib/libhdrdynamicootf.so
-vendor/lib/libhdr_backlight_adapter.so
-vendor/lib/libhdr_tm.so
-vendor/lib/libhdr_hbm.so
+vendor/lib64/libhdr10plus.so
+vendor/lib64/libhdr_backlight_adapter.so
+vendor/lib64/libhdr_hbm.so
+vendor/lib64/libhdr_tm.so
 vendor/lib64/libhdrdynamic.so
 vendor/lib64/libhdrdynamicootf.so
-vendor/lib64/libhdr_backlight_adapter.so
-vendor/lib64/libhdr_tm.so
-vendor/lib64/libhdr_hbm.so
-vendor/lib64/libhdr10plus.so
 
 # Display HWC
 vendor/bin/hw/vendor.qti.hardware.display.composer-service
@@ -1720,6 +1689,7 @@ vendor/lib/vendor.xiaomi.hardware.fx.tunnel@1.0.so
 vendor/lib64/hw/fingerprint.goodix_fod.so:vendor/lib64/hw/fingerprint.goodix_fod.default.so
 vendor/lib64/libgf_hal.so
 vendor/lib64/vendor.xiaomi.hardware.fx.tunnel@1.0.so
+vendor/lib64/vendor.xiaomi.hw.touchfeature@1.0.so
 
 # FM
 vendor/etc/init.qti.fm.sh
@@ -1963,6 +1933,7 @@ vendor/bin/init.kernel.post_boot-diwali.sh
 vendor/bin/init.kernel.post_boot-taro.sh
 vendor/bin/init.kernel.post_boot.sh
 vendor/bin/init.qti.kernel.sh
+vendor/bin/init.qti.write.sh
 vendor/bin/vendor_modprobe.sh
 vendor/etc/init/hw/init.qti.kernel.rc
 
@@ -2087,6 +2058,14 @@ vendor/lib64/libstagefright_softomx.so
 vendor/lib64/libstagefrighthw.so
 vendor/lib64/libvideotxr.so
 vendor/lib64/qti.video.utils.videobufferlayout.so
+
+# MIUI camera from from cupid V14.0.2.0.TLCMIXM
+product/priv-app/MiuiCamera/MiuiCamera.apk:system/priv-app/MiuiCamera/MiuiCamera.apk|981cfe8fb78426ab4cd9045961c187d4ae7ef291
+system/etc/public.libraries-xiaomi.txt
+system/lib64/libcamera_algoup_jni.xiaomi.so
+system/lib64/libcamera_mianode_jni.xiaomi.so
+system/lib64/libmicampostproc_client.so
+system/lib64/vendor.xiaomi.hardware.campostproc@1.0.so
 
 # Mlipay
 vendor/bin/fidoca
@@ -2302,6 +2281,7 @@ vendor/lib/libqti-perfd.so
 vendor/lib/libqti-util.so
 vendor/lib/libqti-utils.so
 vendor/lib/libskewknob.so
+vendor/lib/libthermalclient.so
 vendor/lib64/liblearningmodule.so
 vendor/lib64/libmeters.so
 vendor/lib64/libperfconfig.so
@@ -2312,6 +2292,7 @@ vendor/lib64/libqti-perfd.so
 vendor/lib64/libqti-util.so
 vendor/lib64/libqti-utils.so
 vendor/lib64/libskewknob.so
+vendor/lib64/libthermalclient.so
 
 # Peripheral manager
 vendor/bin/pm-proxy
@@ -2358,15 +2339,15 @@ vendor/lib/libpowercore.so
 vendor/lib64/libpowercallback.so
 vendor/lib64/libpowercore.so
 
+# Protobuf
+vendor/lib64/libprotobuf-cpp-full-3.9.1.so
+vendor/lib64/libprotobuf-cpp-lite-3.9.1.so
+
 # Psiclient
 vendor/bin/hw/vendor.qti.psiclient@1.0-service
 vendor/etc/init/vendor.qti.psiclient@1.0-service.rc
 vendor/lib/libpsi.so
 vendor/lib64/libpsi.so
-
-# Protobuf
-vendor/lib64/libprotobuf-cpp-full-3.9.1.so
-vendor/lib64/libprotobuf-cpp-lite-3.9.1.so
 
 # QCC
 vendor/lib/hw/vendor.qti.hardware.qccvndhal@1.0-impl.so
@@ -3078,57 +3059,6 @@ vendor/lib64/libsxrcryptoimpl.so
 vendor/lib64/libsxrservice.so
 
 # Thermal engine
-vendor/bin/mi_thermald
-vendor/bin/thermal-engine-v2
-vendor/etc/init/hw/init.mi_thermald.rc
-vendor/etc/init/init_thermal-engine-v2.rc
-vendor/etc/thermal-4k.conf
-vendor/etc/thermal-abnormal.conf
-vendor/etc/thermal-camera.conf
-vendor/etc/thermal-chg-only.conf
-vendor/etc/thermal-class0.conf
-vendor/etc/thermal-engine.conf
-vendor/etc/thermal-hp-mgame.conf
-vendor/etc/thermal-hp-normal.conf
-vendor/etc/thermal-huanji.conf
-vendor/etc/thermal-iec-4k.conf
-vendor/etc/thermal-iec-abnormal.conf
-vendor/etc/thermal-iec-camera.conf
-vendor/etc/thermal-iec-chg-only.conf
-vendor/etc/thermal-iec-class0.conf
-vendor/etc/thermal-iec-huanji.conf
-vendor/etc/thermal-iec-mgame.conf
-vendor/etc/thermal-iec-navigation.conf
-vendor/etc/thermal-iec-nolimits.conf
-vendor/etc/thermal-iec-normal.conf
-vendor/etc/thermal-iec-per-class0.conf
-vendor/etc/thermal-iec-per-navigation.conf
-vendor/etc/thermal-iec-per-normal.conf
-vendor/etc/thermal-iec-per-video.conf
-vendor/etc/thermal-iec-phone.conf
-vendor/etc/thermal-iec-tgame.conf
-vendor/etc/thermal-iec-video.conf
-vendor/etc/thermal-iec-videochat.conf
-vendor/etc/thermal-map.conf
-vendor/etc/thermal-mgame.conf
-vendor/etc/thermal-navigation.conf
-vendor/etc/thermal-nolimits.conf
-vendor/etc/thermal-normal.conf
-vendor/etc/thermal-per-class0.conf
-vendor/etc/thermal-per-navigation.conf
-vendor/etc/thermal-per-normal.conf
-vendor/etc/thermal-per-video.conf
-vendor/etc/thermal-phone.conf
-vendor/etc/thermal-tgame.conf
-vendor/etc/thermal-video.conf
-vendor/etc/thermal-videochat.conf
-vendor/etc/thermald-devices.conf
-
-# Thermal engine
-vendor/bin/mi_thermald
-vendor/bin/thermal-engine-v2
-vendor/etc/init/hw/init.mi_thermald.rc
-vendor/etc/init/init_thermal-engine-v2.rc
 vendor/etc/thermal-4k.conf
 vendor/etc/thermal-abnormal.conf
 vendor/etc/thermal-camera.conf
@@ -3172,8 +3102,10 @@ vendor/etc/thermal-videochat.conf
 vendor/etc/thermald-devices.conf
 
 # Thermal
-vendor/lib/libthermalclient.so
-vendor/lib64/libthermalclient.so
+vendor/bin/mi_thermald
+vendor/bin/thermal-engine-v2
+vendor/etc/init/hw/init.mi_thermald.rc
+vendor/etc/init/init_thermal-engine-v2.rc
 
 # Time services
 vendor/app/TimeService/TimeService.apk
@@ -3565,6 +3497,7 @@ vendor/lib64/libmmrtpencoder_vendor.so
 vendor/lib64/libwfdcodecv4l2_proprietary.so
 vendor/lib64/libwfdcommonutils_proprietary.so
 vendor/lib64/libwfdconfigutils_proprietary.so
+vendor/lib64/libwfddisplayconfig_vendor.so
 vendor/lib64/libwfdhdcpcp.so
 vendor/lib64/libwfdhdcpservice_proprietary.so
 vendor/lib64/libwfdmminterface_proprietary.so
