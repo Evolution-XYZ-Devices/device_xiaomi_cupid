@@ -8,11 +8,12 @@ ro.charger.enable_suspend=1
 # CNE
 persist.vendor.cne.feature=1
 
-# Framework allowlists
-persist.vendor.camera.privapp.list=com.android.camera
-
 # Google Lens
 ro.com.google.lens.oem_camera_package=com.android.camera
+
+# Framework allowlists
+persist.vendor.camera.privapp.list=com.android.camera
+#vendor.camera.aux.packagelist=com.android.camera
 
 # Graphics
 debug.sf.disable_backpressure=1

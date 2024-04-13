@@ -830,4 +830,7 @@
     <!-- Whether the new Auto Selection Network UI should be shown -->
     <bool name="config_enableNewAutoSelectNetworkUI">true</bool>
 
+    <!-- Whether to show weather on the lock screen by default. -->
+    <bool name="config_lockscreenWeatherEnabledByDefault">true</bool>
+
 </resources>
