@@ -52,6 +52,9 @@ fi
 
 function blob_fixup() {
     case "${1}" in
+        vendor/etc/init/hw/init.mi_thermald.rc|vendor/etc/init/hw/init.qcom.usb.rc|vendor/etc/init/hw/init.qti.kernel.rc)
+            sed -i 's/on charger/on property:init.svc.vendor.charger=running/g' "${2}"
+            ;;
         vendor/etc/camera/cupid_enhance_motiontuning.xml|vendor/etc/camera/cupid_motiontuning.xml)
             sed -i 's/xml=version/xml version/g' "${2}"
             ;;
