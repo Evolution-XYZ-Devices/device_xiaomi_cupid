@@ -1,6 +1,8 @@
 # All unpinned blobs below are extracted from cupid OS1.0.2.0.ULCMIXM
 
 # ACDB
+vendor/etc/acdbdata/Forte/Forte_acdb_cal.acdb
+vendor/etc/acdbdata/Forte/Forte_workspaceFileXml.qwsp
 vendor/etc/acdbdata/Forte_elus/Forte_elus_acdb_cal.acdb
 vendor/etc/acdbdata/Forte_elus/Forte_elus_workspaceFileXml.qwsp
 
@@ -38,6 +40,7 @@ vendor/lib/rfsa/adsp/libcvpdsp_2_1.so
 vendor/lib/rfsa/adsp/libdspCV_skel.so
 vendor/lib/rfsa/adsp/libdsp_streamer_binning.so
 vendor/lib/rfsa/adsp/libdsp_streamer_qvrcam_receiver.so
+vendor/lib/rfsa/adsp/libevadsp_3_0.so
 vendor/lib/rfsa/adsp/libeye_tracking_dsp_sample_skel.so
 vendor/lib/rfsa/adsp/libfastcvadsp.so
 vendor/lib/rfsa/adsp/libfastcvdsp_skel.so
@@ -77,6 +80,20 @@ vendor/lib64/libadsp_default_listener.so
 # ANT+
 vendor/lib/hw/com.dsi.ant@1.0-impl.so
 vendor/lib64/hw/com.dsi.ant@1.0-impl.so
+
+# Audio configs
+vendor/etc/audio/sku_taro/mixer_paths_overlay_dynamic.xml
+vendor/etc/audio/sku_taro/mixer_paths_overlay_static.xml
+vendor/etc/audio/sku_taro/mixer_paths_waipio_mtp.xml
+vendor/etc/audio/sku_taro/resourcemanager_waipio_mtp.xml
+vendor/etc/audio_cloud_control_white_list.xml
+vendor/etc/backend_conf.xml
+vendor/etc/card-defs.xml
+vendor/etc/media_codecs_c2_audio.xml
+vendor/etc/media_codecs_vendor_audio.xml
+vendor/etc/microphone_characteristics.xml
+vendor/etc/usecaseKvManager.xml
+vendor/etc/bluetooth_qti_hearing_aid_audio_policy_configuration.xml
 
 # Audio firmware
 vendor/firmware/B-cs35l41-dsp1-spk-cali.bin
@@ -378,6 +395,7 @@ vendor/etc/camera/bokehParams.json
 vendor/etc/camera/cache
 vendor/etc/camera/calibration.bin
 vendor/etc/camera/camxoverridesettings.txt
+vendor/etc/camera/camxoverridesettingsOfCloseLog.txt
 vendor/etc/camera/com.xiaomi.dcal.wu.golden
 vendor/etc/camera/cupid_enhance_motiontuning.xml
 vendor/etc/camera/cupid_motiontuning.xml
@@ -1773,6 +1791,12 @@ vendor/lib64/vendor.qti.gnss-V3-ndk_platform.so
 vendor/lib64/vendor.qti.gnss-service.so
 
 # Graphics (Adreno firmware)
+vendor/firmware/a610_zap.b00
+vendor/firmware/a610_zap.b01
+vendor/firmware/a610_zap.b02
+vendor/firmware/a610_zap.elf
+vendor/firmware/a610_zap.mdt
+vendor/firmware/a630_sqe.fw
 vendor/firmware/a660_sqe.fw
 vendor/firmware/a662_gmu.bin
 vendor/firmware/a662_zap.b00
@@ -2591,6 +2615,7 @@ vendor/lib/libqcrilNrQtiBus.so
 vendor/lib/libqcrilNrQtiMutex.so
 vendor/lib/libqcrildataaidl.so
 vendor/lib/libqcrildatactl.so
+vendor/lib/libqcrildataqos.so
 vendor/lib/libqdpr.so
 vendor/lib/libqrtr.so
 vendor/lib/libqrtrclient.so
@@ -2897,6 +2922,7 @@ vendor/etc/sensors/config/sns_rmd.json
 vendor/etc/sensors/config/sns_rotv.json
 vendor/etc/sensors/config/sns_sar_algo.json
 vendor/etc/sensors/config/sns_sar_algo_1.json
+vendor/etc/sensors/config/sns_screen_down.json
 vendor/etc/sensors/config/sns_smd.json
 vendor/etc/sensors/config/sns_tilt.json
 vendor/etc/sensors/config/sns_tilt_sw_disabled.json
@@ -2975,6 +3001,7 @@ vendor/lib64/libsxrservice.so
 # Thermal engine
 vendor/etc/thermal-4k.conf
 vendor/etc/thermal-abnormal.conf
+vendor/etc/thermal-arvr.conf
 vendor/etc/thermal-camera.conf
 vendor/etc/thermal-chg-only.conf
 vendor/etc/thermal-class0.conf
@@ -3000,6 +3027,7 @@ vendor/etc/thermal-iec-phone.conf
 vendor/etc/thermal-iec-tgame.conf
 vendor/etc/thermal-iec-video.conf
 vendor/etc/thermal-iec-videochat.conf
+vendor/etc/thermal-l18a-map.conf
 vendor/etc/thermal-map.conf
 vendor/etc/thermal-mgame.conf
 vendor/etc/thermal-navigation.conf
@@ -3010,6 +3038,7 @@ vendor/etc/thermal-per-navigation.conf
 vendor/etc/thermal-per-normal.conf
 vendor/etc/thermal-per-video.conf
 vendor/etc/thermal-phone.conf
+vendor/etc/thermal-region-map.conf
 vendor/etc/thermal-tgame.conf
 vendor/etc/thermal-video.conf
 vendor/etc/thermal-videochat.conf
