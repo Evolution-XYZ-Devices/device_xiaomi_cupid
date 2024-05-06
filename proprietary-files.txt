@@ -93,7 +93,6 @@ vendor/etc/media_codecs_c2_audio.xml
 vendor/etc/media_codecs_vendor_audio.xml
 vendor/etc/microphone_characteristics.xml
 vendor/etc/usecaseKvManager.xml
-vendor/etc/bluetooth_qti_hearing_aid_audio_policy_configuration.xml
 
 # Audio firmware
 vendor/firmware/B-cs35l41-dsp1-spk-cali.bin
