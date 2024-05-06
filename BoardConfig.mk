@@ -173,7 +173,8 @@ TARGET_KERNEL_EXT_MODULES := \
 	qcom/opensource/display-drivers/msm \
 	qcom/opensource/eva-kernel \
 	qcom/opensource/video-driver \
-	qcom/opensource/wlan/qcacld-3.0
+	qcom/opensource/wlan/qcacld-3.0/.qca6490 \
+	qcom/opensource/wlan/qcacld-3.0/.qca6750
 
 # Metadata
 BOARD_USES_METADATA_PARTITION := true
