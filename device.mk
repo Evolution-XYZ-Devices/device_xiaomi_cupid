@@ -92,7 +92,6 @@ PRODUCT_PACKAGES += \
     libqcomvisualizer \
     libqcomvoiceprocessing \
     libvolumelistener \
-    sound_trigger.primary.taro \
     libhfp_pal
 
 PRODUCT_COPY_FILES += \

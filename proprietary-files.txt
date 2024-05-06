@@ -1925,10 +1925,12 @@ vendor/lib64/libqtikeymint.so
 # Listen
 vendor/etc/vintf/manifest/manifest_non_qmaa.xml
 vendor/etc/vintf/manifest/manifest_non_qmaa_extn.xml
+vendor/lib/hw/sound_trigger.primary.taro.so
 vendor/lib/libeai_fixed_32.so
 vendor/lib/liblistensoundmodel2vendor.so
 vendor/lib/vendor.qti.hardware.ListenSoundModel@1.0-impl.so
 vendor/lib/vendor.qti.hardware.ListenSoundModel@1.0.so
+vendor/lib64/hw/sound_trigger.primary.taro.so
 vendor/lib64/libeai_fixed.so
 vendor/lib64/libeai_float.so
 vendor/lib64/liblistensoundmodel2vendor.so
