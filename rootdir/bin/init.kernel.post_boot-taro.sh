@@ -36,16 +36,16 @@ ddr_type4="07"
 ddr_type5="08"
 
 # Core control parameters for gold
-echo 2 > /sys/devices/system/cpu/cpu4/core_ctl/min_cpus
-echo 60 > /sys/devices/system/cpu/cpu4/core_ctl/busy_up_thres
-echo 30 > /sys/devices/system/cpu/cpu4/core_ctl/busy_down_thres
+echo 1 > /sys/devices/system/cpu/cpu4/core_ctl/min_cpus
+echo 70 > /sys/devices/system/cpu/cpu4/core_ctl/busy_up_thres
+echo 40 > /sys/devices/system/cpu/cpu4/core_ctl/busy_down_thres
 echo 100 > /sys/devices/system/cpu/cpu4/core_ctl/offline_delay_ms
 echo 3 > /sys/devices/system/cpu/cpu4/core_ctl/task_thres
 
 # Core control parameters for gold+
 echo 0 > /sys/devices/system/cpu/cpu7/core_ctl/min_cpus
-echo 60 > /sys/devices/system/cpu/cpu7/core_ctl/busy_up_thres
-echo 30 > /sys/devices/system/cpu/cpu7/core_ctl/busy_down_thres
+echo 80 > /sys/devices/system/cpu/cpu7/core_ctl/busy_up_thres
+echo 50 > /sys/devices/system/cpu/cpu7/core_ctl/busy_down_thres
 echo 100 > /sys/devices/system/cpu/cpu7/core_ctl/offline_delay_ms
 echo 1 > /sys/devices/system/cpu/cpu7/core_ctl/task_thres
 
@@ -113,14 +113,23 @@ echo 1 > /sys/devices/system/cpu/cpufreq/policy0/walt/pl
 
 # configure input boost settings
 if [ $rev == "1.0" ]; then
-	echo 1382800 0 0 0 0 0 0 0 > /proc/sys/walt/input_boost/input_boost_freq
+	echo 0 0 0 0 0 0 0 0 > /proc/sys/walt/input_boost/input_boost_freq
 else
-	echo 1171200 0 0 0 0 0 0 0 > /proc/sys/walt/input_boost/input_boost_freq
+	echo 0 0 0 0 0 0 0 0 > /proc/sys/walt/input_boost/input_boost_freq
 fi
-echo 100 > /proc/sys/walt/input_boost/input_boost_ms
+echo 0 > /proc/sys/walt/input_boost/input_boost_ms
 
-echo 1785600 0 0 0 2169600 0 0 2419200 > /proc/sys/walt/input_boost/powerkey_input_boost_freq
-echo 120 > /proc/sys/walt/input_boost/powerkey_input_boost_ms
+echo 0 0 0 0 0 0 0 0 > /proc/sys/walt/input_boost/powerkey_input_boost_freq
+echo 0 > /proc/sys/walt/input_boost/powerkey_input_boost_ms
+
+# Enable Core control on gold cluster
+echo 1 > /sys/devices/system/cpu/cpu4/core_ctl/enable
+
+# Enable Core control min cpus on gold cluster
+echo 0 > /sys/devices/system/cpu/cpu4/core_ctl/min_cpus
+
+# Enable Core control max cpus on gold cluster
+echo 3 > /sys/devices/system/cpu/cpu4/core_ctl/max_cpus
 
 # configure governor settings for gold cluster
 echo "walt" > /sys/devices/system/cpu/cpufreq/policy4/scaling_governor
