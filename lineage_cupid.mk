@@ -9,9 +9,9 @@ $(call inherit-product, device/xiaomi/cupid/device.mk)
 
 # Inherit from common evolution configuration
 TARGET_DISABLE_EPPE := true
-$(call inherit-product, vendor/evolution/config/common_full_phone.mk)
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
-PRODUCT_NAME := evolution_cupid
+PRODUCT_NAME := lineage_cupid
 PRODUCT_DEVICE := cupid
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := Xiaomi
@@ -20,8 +20,6 @@ PRODUCT_MODEL := Xiaomi 12
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 # EvolutionX specific flags
-EVO_BUILD_TYPE := OFFICIAL
+EVO_BUILD_TYPE := Official
 EXTRA_UDFPS_ANIMATIONS := true
-TARGET_BOOT_ANIMATION_RES := 1080
-TARGET_SUPPORTS_QUICK_TAP := true
-TARGET_INCLUDE_GRAMOPHONE := false
+TARGET_BOOT_ANIMATION_RES := 1440

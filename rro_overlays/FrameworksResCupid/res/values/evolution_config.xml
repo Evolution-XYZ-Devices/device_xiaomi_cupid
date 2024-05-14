@@ -4,31 +4,6 @@
      SPDX-License-Identifier: Apache-2.0
 -->
 <resources>
-
-    <!-- Is the battery LED intrusive? Used to decide if there should be a disable option -->
-    <bool name="config_intrusiveBatteryLed">false</bool>
-
-    <!-- Does the device have a notification led -->
-    <bool name="config_hasNotificationLed">false</bool>
-
-    <!-- Does the battery LED support multiple colors?
-         Used to decide if the user can change the colors -->
-    <bool name="config_multiColorBatteryLed">false</bool>
-
-    <!-- Do the battery/notification LEDs support pulsing?
-         Used to decide if we show pulse settings -->
-    <bool name="config_ledCanPulse">false</bool>
-
-    <!-- The list of package IDs that are allowed to use aux cameras.
-         NOTE: If this list is empty then all apps will be able to use aux cameras. -->
-    <string-array name="config_cameraAuxPackageAllowList" translatable="false">
-        <item>com.android.camera</item>
-        <item>org.codeaurora.snapcam</item>
-        <item>org.lineageos.aperture</item>
-        <item>org.lineageos.aperture.dev</item>
-        <item>org.pixelexperience.faceunlock</item>
-    </string-array>
-
     <!-- Whether device has turbo power charging support -->
     <bool name="config_hasTurboPowerCharger">true</bool>
 
@@ -37,14 +12,4 @@
 
     <!-- Expected value from fast charging status file  -->
     <string name="config_oemFastChargerStatusValue" translatable="false">1</string>
-
-    <!-- Whether device supports in-display fingerprint -->
-    <bool name="config_supportsUdfps">true</bool>
-
-    <!-- Whether devices suports in-display fingerprint when screen is off -->
-    <bool name="config_supportsScreenOffUdfps">true</bool>
-
-    <!-- Pocket Lock -->
-    <bool name="config_pocketModeSupported">false</bool>
-
 </resources>
