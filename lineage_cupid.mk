@@ -21,5 +21,5 @@ PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 # EvolutionX specific flags
 EVO_BUILD_TYPE := Official
-EXTRA_UDFPS_ANIMATIONS := true
+TARGET_HAS_UDFPS := true
 TARGET_BOOT_ANIMATION_RES := 1440
