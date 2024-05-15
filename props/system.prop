@@ -19,20 +19,6 @@ ro.sf.force_hwc_brightness=1
 # IMS
 persist.dbg.volte_avail_ovr=1
 
-# LMK properties
-ro.lmk.kill_heaviest_task=true
-ro.lmk.kill_timeout_ms=50
-ro.lmk.use_new_strategy=true
-ro.lmk.enable_watermark_check=true
-ro.lmk.enable_userspace_lmk=true
-ro.lmk.enhance_batch_kill=false
-ro.lmk.super_critical=701
-ro.lmk.filecache_min_kb=153600
-ro.lmk.stall_limit_critical=40
-ro.lmk.psi_scrit_complete_stall_ms=150
-ro.lmk.direct_reclaim_pressure=45
-ro.lmk.reclaim_scan_threshold=0
-
 # Media
 media.aac_51_output_enabled=true
 media.stagefright.enable-aac=true
@@ -51,17 +37,6 @@ ro.nfc.port=I2C
 
 # QTI
 ro.vendor.qti.va_aosp.support=1
-
-# Ram
-ro.config.fha_enable=true
-ro.sys.fw.bg_apps_limit=32
-ro.config.dha_cached_max=16
-ro.config.dha_empty_max=42
-ro.config.dha_empty_init=32
-ro.config.dha_lmk_scale=0.545
-ro.config.dha_th_rate=2.3
-ro.config.sdha_apps_bg_max=64
-ro.config.sdha_apps_bg_min=8
 
 # Radio
 DEVICE_PROVISIONED=1
