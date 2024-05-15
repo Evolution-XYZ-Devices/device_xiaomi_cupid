@@ -549,7 +549,7 @@
          This array should be equal in size to config_screenBrightnessBacklight -->
     <array name="config_screenBrightnessNits">
         <item>2.0</item>
-        <item>850.0</item>
+        <item>1000.0</item>
     </array>
 
 <!-- Network -->
