@@ -249,6 +249,9 @@ on property:vendor.audio.cit.spkcal.copy=true
     chmod 666 /mnt/vendor/persist/audio/aw_calr.bin
     chmod 666 /mnt/vendor/persist/audio/aw_calr.txt
 
+    # Set background cpuset
+    write /dev/cpuset/background/cpus 0-1
+
 service vendor.nv_mac /vendor/bin/nv_mac
     class late_start
     user system
