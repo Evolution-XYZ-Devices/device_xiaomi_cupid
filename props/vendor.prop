@@ -184,20 +184,13 @@ vendor.gatekeeper.disable_spu=true
 # Graphics
 debug.egl.hw=0
 debug.sf.disable_client_composition_cache=1
-debug.sf.early.app.duration=13666666
-debug.sf.early.sf.duration=15666666
-debug.sf.earlyGl.app.duration=13666666
-debug.sf.earlyGl.sf.duration=15666666
 debug.sf.enable_gl_backpressure=1
 debug.sf.enable_hwc_vds=1
 debug.sf.hw=0
 debug.sf.auto_latch_unsignaled=true
-debug.sf.late.app.duration=13666666
-debug.sf.late.sf.duration=15666666
 debug.sf.predict_hwc_composition_strategy=0
 debug.sf.set_idle_timer_ms=1000
 debug.sf.treat_170m_as_sRGB=1
-debug.sf.use_phase_offsets_as_durations=1
 persist.sys.sf.color_mode=9
 persist.sys.sf.color_saturation=1.0
 ro.gfx.driver.1=com.qualcomm.qti.gpudrivers.taro.api31
@@ -220,6 +213,7 @@ ro.vendor.all_modes.colorpick_adjust=true
 vendor.gralloc.disable_ubwc=0
 
 # HWUI
+ro.hwui.render_ahead=5
 debug.hwui.use_hint_manager=true
 debug.hwui.target_cpu_time_percent=30
 
