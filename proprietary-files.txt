@@ -262,13 +262,6 @@ vendor/lib64/libsoc_helper.so
 vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so
 vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.1.so
 
-# Camera MIUI
-product/priv-app/MiuiCamera/MiuiCamera.apk:system/priv-app/MiuiCamera/MiuiCamera.apk|a645bcf3b60584ecf138fb457f16cc3f790a1724
-system_ext/lib64/libcamera_algoup_jni.xiaomi.so:system/lib64/libcamera_algoup_jni.xiaomi.so
-system_ext/lib64/libcamera_mianode_jni.xiaomi.so:system/lib64/libcamera_mianode_jni.xiaomi.so
-system_ext/lib64/libmicampostproc_client.so:system/lib64/libmicampostproc_client.so
-system_ext/lib64/vendor.xiaomi.hardware.campostproc@1.0.so:system/lib64/vendor.xiaomi.hardware.campostproc@1.0.so
-
 # Camera firmware
 vendor/firmware/CAMERA_ICP.b00
 vendor/firmware/CAMERA_ICP.b01
@@ -303,6 +296,13 @@ vendor/firmware/cupid_imx766_bu24618_ois.prog
 vendor/firmware/cupid_wide_bu24618_ois.coeff
 vendor/firmware/cupid_wide_bu24618_ois.mem
 vendor/firmware/cupid_wide_bu24618_ois.prog
+
+# Camera MIUI
+product/priv-app/MiuiCamera/MiuiCamera.apk:system/priv-app/MiuiCamera/MiuiCamera.apk|a645bcf3b60584ecf138fb457f16cc3f790a1724
+system_ext/lib64/libcamera_algoup_jni.xiaomi.so:system/lib64/libcamera_algoup_jni.xiaomi.so
+system_ext/lib64/libcamera_mianode_jni.xiaomi.so:system/lib64/libcamera_mianode_jni.xiaomi.so
+system_ext/lib64/libmicampostproc_client.so:system/lib64/libmicampostproc_client.so
+system_ext/lib64/vendor.xiaomi.hardware.campostproc@1.0.so:system/lib64/vendor.xiaomi.hardware.campostproc@1.0.so
 
 # Camera sensors
 vendor/lib/camera/com.qti.sensormodule.cupid_ofilm_ov32b40_front.bin
@@ -1301,11 +1301,13 @@ vendor/etc/display/qdcm_calib_data_xiaomi_42_02_0a_mp_cmd_mode_dsc_dsi_panel.jso
 vendor/etc/mdss_dsi_l3_42_02_0a_dsc_cmd_mi.xml
 
 # Display HDR
+vendor/lib/libgame_enhance.so
 vendor/lib/libhdr_backlight_adapter.so
 vendor/lib/libhdr_hbm.so
 vendor/lib/libhdr_tm.so
 vendor/lib/libhdrdynamic.so
 vendor/lib/libhdrdynamicootf.so
+vendor/lib64/libgame_enhance.so
 vendor/lib64/libhdr10plus.so
 vendor/lib64/libhdr_backlight_adapter.so
 vendor/lib64/libhdr_hbm.so
@@ -1522,10 +1524,10 @@ vendor/etc/dolby_vision.cfg
 vendor/etc/init/vendor.dolby.media.c2@1.0-service.rc
 vendor/etc/media_codecs_system_default.xml
 vendor/etc/media_codecs_with_dolby_taro.xml
+vendor/lib/c2.dolby.store.so
 vendor/lib64/c2.dolby.client.so
 vendor/lib64/c2.dolby.egl.so
 vendor/lib64/c2.dolby.hevc.enc.so
-vendor/lib/c2.dolby.store.so
 vendor/lib64/c2.dolby.store.so
 vendor/lib64/libdolbyottcameracontrol.so
 
@@ -3388,7 +3390,6 @@ vendor/lib64/mediadrm/libwvdrmengine.so
 
 # WiFi Display
 system/framework/WfdCommon.jar
-system_ext/priv-app/WfdService/WfdService.apk
 system_ext/bin/wfdservice
 system_ext/etc/init/wfdservice.rc
 system_ext/etc/permissions/wfd-system-ext-privapp-permissions-qti.xml
@@ -3428,6 +3429,7 @@ system_ext/lib64/libwfduibcsink.so
 system_ext/lib64/libwfduibcsinkinterface.so
 system_ext/lib64/libwfduibcsrc.so
 system_ext/lib64/libwfduibcsrcinterface.so
+system_ext/priv-app/WfdService/WfdService.apk
 vendor/bin/wfdhdcphalservice
 vendor/bin/wfdvndservice
 vendor/bin/wifidisplayhalservice
