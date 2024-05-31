@@ -249,6 +249,10 @@ on property:vendor.audio.cit.spkcal.copy=true
     chmod 666 /mnt/vendor/persist/audio/aw_calr.bin
     chmod 666 /mnt/vendor/persist/audio/aw_calr.txt
 
+on property:vendor.post_boot.parsed=1
+    # Set restricted cpuset to the same CPUs as system-background
+    copy /dev/cpuset/system-background/cpus /dev/cpuset/restricted/cpus
+
     # Set background cpuset
     write /dev/cpuset/background/cpus 0-1
 
