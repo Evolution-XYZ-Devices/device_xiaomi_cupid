@@ -262,6 +262,11 @@ PRODUCT_PACKAGES += \
     libhidltransport.vendor \
     libhwbinder.vendor
 
+# Identity
+PRODUCT_PACKAGES += \
+    android.hardware.identity-V3-ndk_platform.vendor \
+    android.hardware.keymaster-V3-ndk_platform.vendor
+
 # IPACM
 PRODUCT_PACKAGES += \
     ipacm \
@@ -283,9 +288,10 @@ PRODUCT_PACKAGES += \
 # Keymaster
 PRODUCT_PACKAGES += \
     android.hardware.keymaster@4.1.vendor \
-    android.hardware.security.rkp-V1-ndk.vendor \
-    android.hardware.security.sharedsecret-V1-ndk_platform.vendor \
     android.hardware.security.keymint-V1-ndk_platform.vendor \
+    android.hardware.security.secureclock-V1-ndk_platform.vendor \
+    android.hardware.security.sharedsecret-V1-ndk_platform.vendor \
+    android.hardware.security.rkp-V3-ndk.vendor \
     libkeymaster_messages.vendor
 
 PRODUCT_COPY_FILES += \
@@ -405,6 +411,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libvndfwk_detect_jni.qti_vendor \
     vendor.qti.hardware.systemhelper@1.0.vendor
+
+# QXR
+PRODUCT_PACKAGES += \
+    android.hardware.common-V2-ndk_platform.vendor
 
 # Recovery
 PRODUCT_PACKAGES += \

@@ -79,14 +79,8 @@ function blob_fixup() {
         vendor/lib64/hw/displayfeature.default.so)
             "${PATCHELF}" --replace-needed "libstagefright_foundation.so" "libstagefright_foundation-v33.so" "${2}"
             ;;
-        vendor/lib/hw/displayfeature.default.so)
-            "${PATCHELF}" --replace-needed "libstagefright_foundation.so" "libstagefright_foundation-v33.so" "${2}"
-            ;;
-        vendor/etc/vintf/manifest/c2_manifest_vendor.xml)
-            sed -ni '/ozoaudio/!p' "${2}"
-            ;;
-        vendor/lib64/libqtikeymint.so)
-            "${PATCHELF}" --add-needed "android.hardware.security.rkp-V1-ndk.so" "${2}"
+        vendor/bin/hw/android.hardware.security.keymint-service-qti|vendor/lib/libqtikeymint.so|vendor/lib64/libqtikeymint.so)
+            grep -q "android.hardware.security.rkp-V3-ndk.so" "${2}" || "${PATCHELF_0_17_2}" --add-needed "android.hardware.security.rkp-V3-ndk.so" "${2}"
             ;;
         system/lib64/libcamera_algoup_jni.xiaomi.so|system/lib64/libcamera_mianode_jni.xiaomi.so)
             "${PATCHELF}" --add-needed "libgui_shim_miuicamera.so" "${2}"
